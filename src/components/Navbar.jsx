@@ -9,7 +9,7 @@ const Navbar = ({ setShowLogin }) => {
 
 
   return (
-    <div className='flex justify-between items-center py-5 sticky top-0 z-50 border bg-transparent backdrop-blur-[8px]'>
+    <div className='flex justify-between items-center py-5 relative z-40 '>
       <Link to={'/'}><img className='w-[150px] max-[950px]:w-[130px] max-[400px]:w-[110px]' src={assets.logo} alt="" /></Link>
       <ul className='flex gap-5 text-[#49557e] text-lg max-[950px]:text-base max-[950px]:gap-4 max-[755px]:hidden'>
         <Link to={'/'} onClick={() => setMenu("home")} className={menu === "home" ? "navMenu_underline" : "cursor-pointer"} >Home</Link>
